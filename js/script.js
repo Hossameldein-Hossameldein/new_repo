@@ -9,11 +9,11 @@ window.addEventListener("scroll" , () =>{
 let navbar = document.querySelector('.navbar');
 let nav_scroll = () => {
     if(window.scrollY > 30){
-        navbar.classList.add("fixed-top");
+        navbar.classList.add("sticky-top");
         navbar.classList.add("sticky");
     }
     else{
-        navbar.classList.remove("fixed-top");
+        navbar.classList.remove("sticky-top");
         navbar.classList.remove("sticky");
     }
 }

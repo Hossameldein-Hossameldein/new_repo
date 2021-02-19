@@ -1,14 +1,7 @@
-::-webkit-scrollbar {
-  width: 0.5em;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset #90acd1;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #90acd1;
-  outline: 1px solid #90acd1;
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .button {
@@ -278,6 +271,7 @@
   font-weight: 700;
 }
 .resume .mini-section .mini-box {
+  width: 100%;
   border-radius: 10px;
   padding: 30px;
   background-color: #f9f9ff;
@@ -285,25 +279,13 @@
 }
 .resume .mini-section .mini-box .icon {
   position: relative;
-  width: 50px;
+  min-width: 50px;
   height: 50px;
   background: #90acd1;
   border-radius: 50%;
 }
 .resume .mini-section .mini-box .icon i {
   color: #fff;
-}
-@media (max-width: 768px) {
-  .resume .mini-section .mini-box .icon {
-    position: relative;
-    width: 90px;
-    height: 50px;
-    background: #90acd1;
-    border-radius: 50%;
-  }
-  .resume .mini-section .mini-box .icon i {
-    color: #fff;
-  }
 }
 .resume .mini-section .mini-box .info-box span:first-child {
   font-weight: 700;
@@ -328,20 +310,25 @@
 .resume .mini-section .mini-box:hover .info-box span, .resume .mini-section .mini-box:hover .info-box p {
   color: white;
 }
-.resume .skills .one-skill .progress {
-  width: 400px;
+.resume .skills .container-skills .one-skill {
+  width: 45%;
+  display: inline-block;
+  margin-right: 4%;
+}
+.resume .skills .container-skills .one-skill .progress {
+  width: 100%;
   height: 6px;
   background-color: #e6e6e6;
   overflow: visible;
   border-radius: 0.25rem;
 }
-.resume .skills .one-skill .progress .bar {
+.resume .skills .container-skills .one-skill .progress .bar {
   width: 60%;
   height: 100%;
   background-color: #90acd1;
   position: relative;
 }
-.resume .skills .one-skill .progress .bar span {
+.resume .skills .container-skills .one-skill .progress .bar span {
   position: absolute;
   top: -20px;
   right: 0;
@@ -349,7 +336,7 @@
   transform: translateX(50%);
   font-weight: 500;
 }
-.resume .skills .one-skill .progress .bar::before {
+.resume .skills .container-skills .one-skill .progress .bar::before {
   position: absolute;
   content: "";
   top: -2px;
