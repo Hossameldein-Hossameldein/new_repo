@@ -477,7 +477,7 @@ body {
 }
 .only .box .text-box {
   position: relative;
-  height: 150px;
+  min-height: 190px;
   overflow: hidden;
 }
 .only .box .text-box .item {

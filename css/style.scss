@@ -543,7 +543,7 @@ body {
         }
         .text-box{
             position: relative;
-            height: 150px;
+            min-height: 190px;
             overflow: hidden;
             .item{
                 transition: all .9s;
